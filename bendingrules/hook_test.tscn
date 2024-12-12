@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://chv5xq3veefk3"]
 
-[ext_resource type="Texture2D" uid="uid://qski3iffckxj" path="res://art/test_hook.png" id="1_1uxxr"]
+[ext_resource type="Texture2D" uid="uid://qski3iffckxj" path="res://Assets/nico-placeholders/test_hook.png" id="1_1uxxr"]
 
 [node name="Area2D" type="Area2D"]
 

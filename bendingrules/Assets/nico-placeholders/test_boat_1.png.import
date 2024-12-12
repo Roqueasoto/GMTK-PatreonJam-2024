@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxskj5jfdm87m"
-path="res://.godot/imported/player-fast.png-76cfebb70614038075df15a08856c8ca.ctex"
+uid="uid://bq6v4hqjt8p14"
+path="res://.godot/imported/test_boat_1.png-ae473cd243995a9468a7dc7796488a25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/underwater-diving-files/PNG/player/Spritesheets/player-fast.png"
-dest_files=["res://.godot/imported/player-fast.png-76cfebb70614038075df15a08856c8ca.ctex"]
+source_file="res://Assets/nico-placeholders/test_boat_1.png"
+dest_files=["res://.godot/imported/test_boat_1.png-ae473cd243995a9468a7dc7796488a25.ctex"]
 
 [params]
 
