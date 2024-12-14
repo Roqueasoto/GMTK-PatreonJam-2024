@@ -1,19 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://cd3phtpjut15r"]
+[gd_scene load_steps=6 format=3 uid="uid://cd3phtpjut15r"]
 
 [ext_resource type="Texture2D" uid="uid://byh70anm2lb28" path="res://Assets/KallanCreated/backgrounds/Bubble ocean.png" id="1_gtihl"]
 [ext_resource type="PackedScene" uid="uid://dgiwf6xcclh5i" path="res://obstacles/basic_obstacle.tscn" id="2_v0lct"]
 [ext_resource type="PackedScene" uid="uid://55vx4wf408sd" path="res://boost.tscn" id="3_3e7ws"]
 [ext_resource type="Texture2D" uid="uid://do7vvcs8657hn" path="res://Assets/KallanCreated/backgrounds/sand.png" id="4_07fe4"]
+[ext_resource type="PackedScene" uid="uid://uttrlcxjyynm" path="res://player_boat_and_hook.tscn" id="5_0yt5l"]
 
 [node name="Level1" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1.52588e-05)
+scale = Vector2(1, 1)
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(13, 204)
 rotation = 1.5708
 scale = Vector2(0.433594, 0.433594)
 texture = ExtResource("1_gtihl")
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="basic_obstacle" parent="." instance=ExtResource("2_v0lct")]
 position = Vector2(-345, 165)
@@ -43,3 +46,6 @@ polygon = PackedVector2Array(-617, 523, -525, 503, -450, 495, -423, 488, -390, 5
 position = Vector2(17, 181)
 scale = Vector2(0.467773, 0.467773)
 texture = ExtResource("4_07fe4")
+
+[node name="BoatAndHook" parent="." instance=ExtResource("5_0yt5l")]
+position = Vector2(-88, -260)
