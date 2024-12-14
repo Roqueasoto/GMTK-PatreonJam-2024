@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq2yrr58jxtvr"
-path="res://.godot/imported/Earthy fish.png-2919ef20dfc56504ced11d18963a909c.ctex"
+uid="uid://cms84b0283gvh"
+path="res://.godot/imported/MouthHook.png-2f64a840b1d75c8f875cb752091ae6a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/Earthy fish.png"
-dest_files=["res://.godot/imported/Earthy fish.png-2919ef20dfc56504ced11d18963a909c.ctex"]
+source_file="res://Assets/KallanCreated/hooks/MouthHook.png"
+dest_files=["res://.godot/imported/MouthHook.png-2f64a840b1d75c8f875cb752091ae6a8.ctex"]
 
 [params]
 

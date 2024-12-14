@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br33tx6lialv4"
-path="res://.godot/imported/Double hook.png-4fb7dfd5ce2c31a533c56ff8a97b5d91.ctex"
+uid="uid://30o5xtl8sqh5"
+path="res://.godot/imported/MouthGlowHook.png-d1abed9859a8c711d7b48140dc246f4f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/Double hook.png"
-dest_files=["res://.godot/imported/Double hook.png-4fb7dfd5ce2c31a533c56ff8a97b5d91.ctex"]
+source_file="res://Assets/KallanCreated/hooks/MouthGlowHook.png"
+dest_files=["res://.godot/imported/MouthGlowHook.png-d1abed9859a8c711d7b48140dc246f4f.ctex"]
 
 [params]
 

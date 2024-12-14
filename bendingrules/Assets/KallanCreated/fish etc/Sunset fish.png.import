@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxxcbx77vwi6w"
-path="res://.godot/imported/TrippleHoo.png-33f5ba48522d8cab9f1e321ed3d1675c.ctex"
+uid="uid://soeiqw7fhr15"
+path="res://.godot/imported/Sunset fish.png-c9224b18a0821f477b63f2a689c0e8b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/TrippleHoo.png"
-dest_files=["res://.godot/imported/TrippleHoo.png-33f5ba48522d8cab9f1e321ed3d1675c.ctex"]
+source_file="res://Assets/KallanCreated/fish etc/Sunset fish.png"
+dest_files=["res://.godot/imported/Sunset fish.png-c9224b18a0821f477b63f2a689c0e8b5.ctex"]
 
 [params]
 

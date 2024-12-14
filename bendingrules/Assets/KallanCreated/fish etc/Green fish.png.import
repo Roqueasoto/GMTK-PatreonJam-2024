@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5il4v24fopeg"
-path="res://.godot/imported/1hook.png-c89aa94734c1ff55ce2efd4234e6c987.ctex"
+uid="uid://cewemsn7jy8bk"
+path="res://.godot/imported/Green fish.png-20029ee1226817d4e1e91586aca245f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/1hook.png"
-dest_files=["res://.godot/imported/1hook.png-c89aa94734c1ff55ce2efd4234e6c987.ctex"]
+source_file="res://Assets/KallanCreated/fish etc/Green fish.png"
+dest_files=["res://.godot/imported/Green fish.png-20029ee1226817d4e1e91586aca245f8.ctex"]
 
 [params]
 

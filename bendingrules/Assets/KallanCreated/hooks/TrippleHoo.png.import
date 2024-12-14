@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8sc6xgphad6r"
-path="res://.godot/imported/GlowMonsterHook.png-f624924d15df4d8f5c9a8269ce162064.ctex"
+uid="uid://dxxcbx77vwi6w"
+path="res://.godot/imported/TrippleHoo.png-eb4b4e60cbf90d386f38b9d31e7d8ea8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/GlowMonsterHook.png"
-dest_files=["res://.godot/imported/GlowMonsterHook.png-f624924d15df4d8f5c9a8269ce162064.ctex"]
+source_file="res://Assets/KallanCreated/hooks/TrippleHoo.png"
+dest_files=["res://.godot/imported/TrippleHoo.png-eb4b4e60cbf90d386f38b9d31e7d8ea8.ctex"]
 
 [params]
 

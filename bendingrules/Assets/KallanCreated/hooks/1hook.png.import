@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bsx87cabulspl"
-path="res://.godot/imported/BoneHook.png-321a08b0a5eec0edeae5f5a73137f478.ctex"
+uid="uid://b5il4v24fopeg"
+path="res://.godot/imported/1hook.png-9f958885a548a67638e1ea7240ad3b58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/BoneHook.png"
-dest_files=["res://.godot/imported/BoneHook.png-321a08b0a5eec0edeae5f5a73137f478.ctex"]
+source_file="res://Assets/KallanCreated/hooks/1hook.png"
+dest_files=["res://.godot/imported/1hook.png-9f958885a548a67638e1ea7240ad3b58.ctex"]
 
 [params]
 

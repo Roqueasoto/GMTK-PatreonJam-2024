@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b4pxortio00t2"
-path="res://.godot/imported/GlowSpikeHook.png-fec86df7e520aea3396f74ef33ca1371.ctex"
+path="res://.godot/imported/GlowSpikeHook.png-c031a58c5296c3f95089829d43c3b609.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/GlowSpikeHook.png"
-dest_files=["res://.godot/imported/GlowSpikeHook.png-fec86df7e520aea3396f74ef33ca1371.ctex"]
+source_file="res://Assets/KallanCreated/hooks/GlowSpikeHook.png"
+dest_files=["res://.godot/imported/GlowSpikeHook.png-c031a58c5296c3f95089829d43c3b609.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://55vx4wf408sd"]
 
-[ext_resource type="Texture2D" uid="uid://dv42kvuqkpard" path="res://Assets/KallanCreated/Red squid.png" id="1_ngypy"]
+[ext_resource type="Texture2D" uid="uid://dv42kvuqkpard" path="res://Assets/KallanCreated/fish etc/Red squid.png" id="1_ngypy"]
 
 [node name="boost" type="Node2D"]
 

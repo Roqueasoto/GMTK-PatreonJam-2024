@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlir0sxfjvf60"
-path="res://.godot/imported/MonsterHook.png-9b5d756778f15e27d3ea0fc560daa5a0.ctex"
+uid="uid://dvf4w7roij5at"
+path="res://.godot/imported/Ocean2.png-2754938100b92e7c878f10a736b4c24b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/MonsterHook.png"
-dest_files=["res://.godot/imported/MonsterHook.png-9b5d756778f15e27d3ea0fc560daa5a0.ctex"]
+source_file="res://Assets/KallanCreated/backgrounds/Ocean2.png"
+dest_files=["res://.godot/imported/Ocean2.png-2754938100b92e7c878f10a736b4c24b.ctex"]
 
 [params]
 

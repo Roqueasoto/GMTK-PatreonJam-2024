@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://ut6wjq6r21pn"]
+[gd_scene load_steps=7 format=3 uid="uid://ut6wjq6r21pn"]
 
 [ext_resource type="Script" path="res://main_menu.gd" id="1_domto"]
-[ext_resource type="Texture2D" uid="uid://dvf4w7roij5at" path="res://Assets/KallanCreated/Ocean2.png" id="2_kh432"]
+[ext_resource type="Texture2D" uid="uid://dvf4w7roij5at" path="res://Assets/KallanCreated/backgrounds/Ocean2.png" id="2_kh432"]
+[ext_resource type="FontFile" uid="uid://cug3ukh8osf1q" path="res://Assets/KallanCreated/fish etc/something-fishy.regular.ttf" id="3_1qjfe"]
+[ext_resource type="Texture2D" uid="uid://bmow2l1u6ye1t" path="res://Assets/KallanCreated/Team.png" id="3_di46t"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ey4ni"]
+font = ExtResource("3_1qjfe")
 font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_uflk5"]
+font_size = 25
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -17,11 +23,16 @@ script = ExtResource("1_domto")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = -266.0
-offset_top = -279.0
-offset_right = 1782.0
-offset_bottom = 2453.0
+offset_left = -271.0
+offset_top = -277.0
+offset_right = 1777.0
+offset_bottom = 2455.0
 texture = ExtResource("2_kh432")
+
+[node name="Team" type="Sprite2D" parent="."]
+position = Vector2(485, 406)
+scale = Vector2(0.168106, 0.168106)
+texture = ExtResource("3_di46t")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -51,7 +62,16 @@ layout_mode = 2
 text = "Exit"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(548, 179)
+position = Vector2(502, 219)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 472.0
+offset_right = 593.0
+offset_bottom = 507.0
+text = "By Team Quintet"
+label_settings = SubResource("LabelSettings_uflk5")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

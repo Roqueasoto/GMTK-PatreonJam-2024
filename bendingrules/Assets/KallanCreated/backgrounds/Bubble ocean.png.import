@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brf0o8hpf83tl"
-path="res://.godot/imported/HydraHook.png-c734ba87824cdd049487915e9c930b7f.ctex"
+uid="uid://byh70anm2lb28"
+path="res://.godot/imported/Bubble ocean.png-9d55ee9543876eca4a46cf4def0c3ba2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/HydraHook.png"
-dest_files=["res://.godot/imported/HydraHook.png-c734ba87824cdd049487915e9c930b7f.ctex"]
+source_file="res://Assets/KallanCreated/backgrounds/Bubble ocean.png"
+dest_files=["res://.godot/imported/Bubble ocean.png-9d55ee9543876eca4a46cf4def0c3ba2.ctex"]
 
 [params]
 

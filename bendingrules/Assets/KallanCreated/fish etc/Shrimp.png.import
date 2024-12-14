@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://soeiqw7fhr15"
-path="res://.godot/imported/Sunset fish.png-6a16fa3b0ba8054dec00c7231f6dfeb2.ctex"
+uid="uid://bra32ykfj5u62"
+path="res://.godot/imported/Shrimp.png-19d69489774554cd5bab9c0a2b4d83eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/Sunset fish.png"
-dest_files=["res://.godot/imported/Sunset fish.png-6a16fa3b0ba8054dec00c7231f6dfeb2.ctex"]
+source_file="res://Assets/KallanCreated/fish etc/Shrimp.png"
+dest_files=["res://.godot/imported/Shrimp.png-19d69489774554cd5bab9c0a2b4d83eb.ctex"]
 
 [params]
 

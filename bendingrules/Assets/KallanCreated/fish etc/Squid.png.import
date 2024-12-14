@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfbsjp73mxt1s"
-path="res://.godot/imported/Ocean1.png-928dc83c64c7c60a048555a0dd6cb860.ctex"
+uid="uid://ra6ahb4trokd"
+path="res://.godot/imported/Squid.png-86f397a9e87b361ce18e4e709edbc443.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/Ocean1.png"
-dest_files=["res://.godot/imported/Ocean1.png-928dc83c64c7c60a048555a0dd6cb860.ctex"]
+source_file="res://Assets/KallanCreated/fish etc/Squid.png"
+dest_files=["res://.godot/imported/Squid.png-86f397a9e87b361ce18e4e709edbc443.ctex"]
 
 [params]
 

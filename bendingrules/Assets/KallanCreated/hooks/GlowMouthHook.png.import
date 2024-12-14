@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bf6ri3obodm3a"
-path="res://.godot/imported/StripeFish.png-ecd46bbdc79b921c757a5f087bf9fff4.ctex"
+uid="uid://ousqfmikyhi5"
+path="res://.godot/imported/GlowMouthHook.png-8b645df9ea26b5faedbc5878ce7b27f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/StripeFish.png"
-dest_files=["res://.godot/imported/StripeFish.png-ecd46bbdc79b921c757a5f087bf9fff4.ctex"]
+source_file="res://Assets/KallanCreated/hooks/GlowMouthHook.png"
+dest_files=["res://.godot/imported/GlowMouthHook.png-8b645df9ea26b5faedbc5878ce7b27f8.ctex"]
 
 [params]
 

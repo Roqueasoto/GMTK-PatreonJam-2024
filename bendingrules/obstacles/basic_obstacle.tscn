@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dgiwf6xcclh5i"]
 
-[ext_resource type="Texture2D" uid="uid://bra32ykfj5u62" path="res://Assets/KallanCreated/Shrimp.png" id="1_i4fps"]
+[ext_resource type="Texture2D" uid="uid://bra32ykfj5u62" path="res://Assets/KallanCreated/fish etc/Shrimp.png" id="1_i4fps"]
 
 [node name="basic_obstacle" type="Node2D"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cd3phtpjut15r"]
 
-[ext_resource type="Texture2D" uid="uid://byh70anm2lb28" path="res://Assets/KallanCreated/Bubble ocean.png" id="1_gtihl"]
+[ext_resource type="Texture2D" uid="uid://byh70anm2lb28" path="res://Assets/KallanCreated/backgrounds/Bubble ocean.png" id="1_gtihl"]
 [ext_resource type="PackedScene" uid="uid://dgiwf6xcclh5i" path="res://obstacles/basic_obstacle.tscn" id="2_v0lct"]
 [ext_resource type="PackedScene" uid="uid://55vx4wf408sd" path="res://boost.tscn" id="3_3e7ws"]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ousqfmikyhi5"
-path="res://.godot/imported/GlowMouthHook.png-6a7f362bf67c25fdd67272b0f55709e7.ctex"
+uid="uid://c7s4a04ciksgu"
+path="res://.godot/imported/SpinyHook.png-7fd2b7d2c17c7eb3c7973bde63c93dfb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/GlowMouthHook.png"
-dest_files=["res://.godot/imported/GlowMouthHook.png-6a7f362bf67c25fdd67272b0f55709e7.ctex"]
+source_file="res://Assets/KallanCreated/hooks/SpinyHook.png"
+dest_files=["res://.godot/imported/SpinyHook.png-7fd2b7d2c17c7eb3c7973bde63c93dfb.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brc4r5iofnlml"
-path="res://.godot/imported/Yellow fish.png-8e08b64fec2e9bf3777f2a45d3a429f5.ctex"
+uid="uid://dq2yrr58jxtvr"
+path="res://.godot/imported/Earthy fish.png-8d108f3afe3dad2cf03ddbd5fab03a48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/KallanCreated/Yellow fish.png"
-dest_files=["res://.godot/imported/Yellow fish.png-8e08b64fec2e9bf3777f2a45d3a429f5.ctex"]
+source_file="res://Assets/KallanCreated/fish etc/Earthy fish.png"
+dest_files=["res://.godot/imported/Earthy fish.png-8d108f3afe3dad2cf03ddbd5fab03a48.ctex"]
 
 [params]
 

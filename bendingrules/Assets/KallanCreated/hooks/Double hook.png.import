@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc1epe81yiahf"
-path="res://.godot/imported/yfsblqrm.bmp-4f1e15a8b4c1b7ec8e27a605aa2e2f75.ctex"
+uid="uid://br33tx6lialv4"
+path="res://.godot/imported/Double hook.png-b90d805014212ec9c5d4fff9f1f4ada0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://yfsblqrm.bmp"
-dest_files=["res://.godot/imported/yfsblqrm.bmp-4f1e15a8b4c1b7ec8e27a605aa2e2f75.ctex"]
+source_file="res://Assets/KallanCreated/hooks/Double hook.png"
+dest_files=["res://.godot/imported/Double hook.png-b90d805014212ec9c5d4fff9f1f4ada0.ctex"]
 
 [params]
 
