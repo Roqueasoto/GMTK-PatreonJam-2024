@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxskj5jfdm87m"
-path="res://.godot/imported/player-fast.png-76cfebb70614038075df15a08856c8ca.ctex"
+uid="uid://c0x7a7hgoevc1"
+path="res://.godot/imported/hook_basic_kallan_small.png-66dfbb8da991d5657d98fc91faf5e12b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/underwater-diving-files/PNG/player/Spritesheets/player-fast.png"
-dest_files=["res://.godot/imported/player-fast.png-76cfebb70614038075df15a08856c8ca.ctex"]
+source_file="res://Assets/custom/hook_basic_kallan_small.png"
+dest_files=["res://.godot/imported/hook_basic_kallan_small.png-66dfbb8da991d5657d98fc91faf5e12b.ctex"]
 
 [params]
 
