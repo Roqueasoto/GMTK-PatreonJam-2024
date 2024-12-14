@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://cd3phtpjut15r"]
+[gd_scene load_steps=6 format=3 uid="uid://cd3phtpjut15r"]
 
 [ext_resource type="Texture2D" uid="uid://byh70anm2lb28" path="res://Assets/KallanCreated/backgrounds/Bubble ocean.png" id="1_gtihl"]
 [ext_resource type="PackedScene" uid="uid://dgiwf6xcclh5i" path="res://obstacles/basic_obstacle.tscn" id="2_v0lct"]
 [ext_resource type="PackedScene" uid="uid://55vx4wf408sd" path="res://boost.tscn" id="3_3e7ws"]
+[ext_resource type="Texture2D" uid="uid://do7vvcs8657hn" path="res://Assets/KallanCreated/backgrounds/sand.png" id="4_07fe4"]
+[ext_resource type="PackedScene" uid="uid://uttrlcxjyynm" path="res://player_boat_and_hook.tscn" id="5_0yt5l"]
 
 [node name="Level1" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1.52588e-05)
+scale = Vector2(1, 1)
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(13, 204)
@@ -12,13 +18,11 @@ rotation = 1.5708
 scale = Vector2(0.433594, 0.433594)
 texture = ExtResource("1_gtihl")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="basic_obstacle" parent="." instance=ExtResource("2_v0lct")]
 position = Vector2(-345, 165)
 
 [node name="basic_obstacle2" parent="." instance=ExtResource("2_v0lct")]
-position = Vector2(295, 244)
+position = Vector2(351, 179)
 
 [node name="basic_obstacle3" parent="." instance=ExtResource("2_v0lct")]
 position = Vector2(200, -172)
@@ -31,3 +35,17 @@ position = Vector2(-342, 30)
 
 [node name="boost2" parent="." instance=ExtResource("3_3e7ws")]
 position = Vector2(422, -38)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-1, -225)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-617, 523, -525, 503, -450, 495, -423, 488, -390, 501, -326, 483, -293, 493, -228, 480, -157, 495, -113, 514, -98, 504, -86, 502, -67, 507, -50, 495, -19, 499, -8, 501, 11, 487, 29, 485, 46, 492, 78, 478, 97, 479, 117, 485, 138, 486, 155, 480, 167, 484, 198, 491, 214, 490, 234, 490, 254, 487, 271, 489, 289, 492, 313, 497, 332, 491, 349, 490, 380, 506, 399, 498, 416, 502, 428, 507, 448, 502, 477, 519, 498, 510, 518, 509, 537, 507, 550, 498, 562, 498, 575, 502, 589, 499, 605, 490, 623, 490, 647, 492, 654, 492, 656, 658, -623, 660, -622, 526)
+
+[node name="UntitledArtwork(3)" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(17, 181)
+scale = Vector2(0.467773, 0.467773)
+texture = ExtResource("4_07fe4")
+
+[node name="BoatAndHook" parent="." instance=ExtResource("5_0yt5l")]
+position = Vector2(-88, -260)

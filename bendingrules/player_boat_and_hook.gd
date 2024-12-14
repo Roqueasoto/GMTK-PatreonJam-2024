@@ -7,8 +7,8 @@ var fishing_line
 
 # Variables
 var screen_size
-var boat_speed = 100
-var reel_speed = 100
+var boat_speed = 500
+var reel_speed = 500
 var fishing_line_angle = 0
 
 
@@ -42,13 +42,15 @@ func _handle_reel_input(delta: float) -> void:
 	var reel_velocity = Vector2.ZERO # The player's movement vector.
 	var reel_direction = Vector2(cos(fishing_line_angle), sin(fishing_line_angle))
 	
-	if Input.is_action_pressed("Reel out"):
-		reel_velocity += reel_speed * reel_direction
+	#if Input.is_action_pressed("Reel out"):
+		#reel_velocity += reel_speed * reel_direction
 	if Input.is_action_pressed("Reel in"):
 		reel_velocity -= reel_speed * reel_direction
 	
+	
 	hook.position += reel_velocity * delta
 	hook.position[1] = max(15, hook.position[1])
+	hook.position[1] +=1.2
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -61,8 +63,16 @@ func _process(delta: float) -> void:
 		Vector2(hook.position[0], hook.position[1]+27)
 	]
 	
-	var fishing_line_disp = fishing_line.points[1] - fishing_line.points[0]
+	var fishing_line_disp = (fishing_line.points[1] - fishing_line.points[0]).normalized()
 	fishing_line_angle = atan2(fishing_line_disp[1], fishing_line_disp[0])
+
+	var perp = Vector2(fishing_line_disp[1],-fishing_line_disp[0])
+	if perp[1]>0:
+		perp = -perp
+	if abs(fishing_line_angle-PI/2)>.01:
+		hook.position-=2*perp*fishing_line_disp.length()
+	#fishing_line_angle = atan2(fishing_line_disp[1], fishing_line_disp[0])
+	
 	hook.rotation = fishing_line_angle - PI/2
 	
 	#var boat_collision = boat.get_child(1)	
