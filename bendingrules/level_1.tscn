@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd3phtpjut15r"]
+
+[ext_resource type="Texture2D" uid="uid://byh70anm2lb28" path="res://Assets/KallanCreated/backgrounds/Bubble ocean.png" id="1_gtihl"]
+[ext_resource type="PackedScene" uid="uid://dgiwf6xcclh5i" path="res://obstacles/basic_obstacle.tscn" id="2_v0lct"]
+[ext_resource type="PackedScene" uid="uid://55vx4wf408sd" path="res://boost.tscn" id="3_3e7ws"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(13, 204)
+rotation = 1.5708
+scale = Vector2(0.433594, 0.433594)
+texture = ExtResource("1_gtihl")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="basic_obstacle" parent="." instance=ExtResource("2_v0lct")]
+position = Vector2(-345, 165)
+
+[node name="basic_obstacle2" parent="." instance=ExtResource("2_v0lct")]
+position = Vector2(295, 244)
+
+[node name="basic_obstacle3" parent="." instance=ExtResource("2_v0lct")]
+position = Vector2(200, -172)
+
+[node name="basic_obstacle4" parent="." instance=ExtResource("2_v0lct")]
+position = Vector2(-265, -135)
+
+[node name="boost" parent="." instance=ExtResource("3_3e7ws")]
+position = Vector2(-342, 30)
+
+[node name="boost2" parent="." instance=ExtResource("3_3e7ws")]
+position = Vector2(422, -38)
