@@ -19,14 +19,11 @@ rotation = 1.5708
 scale = Vector2(0.433594, 0.433594)
 texture = ExtResource("1_gtihl")
 
-[node name="basic_obstacle2" parent="." instance=ExtResource("2_v0lct")]
-position = Vector2(238, 180)
-
 [node name="basic_obstacle3" parent="." instance=ExtResource("2_v0lct")]
-position = Vector2(-135, -59)
+position = Vector2(21, -12)
 
-[node name="basic_obstacle4" parent="." instance=ExtResource("2_v0lct")]
-position = Vector2(-438, -112)
+[node name="basic_obstacle3" parent="basic_obstacle3" instance=ExtResource("2_v0lct")]
+position = Vector2(22, 204)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-1, -225)
@@ -47,7 +44,7 @@ position = Vector2(0, 1.52588e-05)
 zoom = Vector2(1.2, 1.2)
 
 [node name="Node2D" parent="." instance=ExtResource("6_52gav")]
-position = Vector2(-431, 131)
+position = Vector2(-429, 227)
 
 [node name="GoalPlatform" parent="." instance=ExtResource("7_qwd27")]
 position = Vector2(449, 222)
@@ -57,4 +54,4 @@ stream = ExtResource("7_n6kcu")
 pitch_scale = 0.79
 
 [node name="Node2D2" parent="." instance=ExtResource("9_c057x")]
-position = Vector2(-410, 36)
+position = Vector2(-434, 167)

@@ -35,7 +35,7 @@ func _process(delta: float) -> void:
 	_handle_reel_input(delta)
 	
 	
-	hook.apply_central_force(-hook.linear_velocity/40)
+	hook.apply_central_force(-hook.linear_velocity/10)
 	#hook	.apply_torque(-500*hook.angular_velocity)
 	
 	
