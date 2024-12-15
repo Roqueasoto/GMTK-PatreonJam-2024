@@ -10,4 +10,4 @@ func _ready() -> void:
 
 func _on_body_entered(_body: Node2D) -> void:
 	print("winner")
-	get_tree().change_scene_to_file("res://won.tscn")
+	get_tree().change_scene_to_file("res://main_menu.tscn")
