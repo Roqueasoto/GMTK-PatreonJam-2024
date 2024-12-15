@@ -1,7 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://c0vmevi56mydw"]
+[gd_scene load_steps=6 format=3 uid="uid://c0vmevi56mydw"]
+
+[ext_resource type="Script" path="res://won.gd" id="1_0d0yn"]
+[ext_resource type="Texture2D" uid="uid://cfbsjp73mxt1s" path="res://Assets/KallanCreated/backgrounds/Ocean1.png" id="1_57j0m"]
+[ext_resource type="Texture2D" uid="uid://do7vvcs8657hn" path="res://Assets/KallanCreated/backgrounds/sand.png" id="2_7n0s2"]
+[ext_resource type="FontFile" uid="uid://cug3ukh8osf1q" path="res://Assets/KallanCreated/fish etc/something-fishy.regular.ttf" id="2_bwp5j"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8cynw"]
+font = ExtResource("2_bwp5j")
 font_size = 200
+shadow_size = 100
+shadow_color = Color(0, 0, 0, 0.490196)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,6 +18,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_0d0yn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(585, 21)
+texture = ExtResource("1_57j0m")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -19,3 +32,18 @@ offset_right = 1525.0
 offset_bottom = 924.0
 text = "You WON!"
 label_settings = SubResource("LabelSettings_8cynw")
+
+[node name="Sand" type="Sprite2D" parent="."]
+position = Vector2(731, -98)
+texture = ExtResource("2_7n0s2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 454.0
+offset_right = 1116.0
+offset_bottom = 681.0
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Exit"
