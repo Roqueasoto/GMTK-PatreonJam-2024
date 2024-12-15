@@ -5,12 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://dgiwf6xcclh5i" path="res://obstacles/basic_obstacle.tscn" id="2_v0lct"]
 [ext_resource type="Texture2D" uid="uid://do7vvcs8657hn" path="res://Assets/KallanCreated/backgrounds/sand.png" id="4_07fe4"]
 [ext_resource type="PackedScene" uid="uid://uttrlcxjyynm" path="res://player_boat_and_hook.tscn" id="5_0yt5l"]
-
-[ext_resource type="PackedScene" uid="uid://dks7x7my1nmga" path="res://platform.tscn" id="6_52gav"]
+[ext_resource type="PackedScene" path="res://platform.tscn" id="6_52gav"]
 [ext_resource type="AudioStream" uid="uid://2li71ebyhxj1" path="res://Assets/SFX/BubbleLevelEnter.mp3" id="7_n6kcu"]
-[ext_resource type="PackedScene" uid="uid://b60qh7n8weevd" path="res://goal_platform.tscn" id="7_qwd27"]
-[ext_resource type="PackedScene" uid="uid://dr4nc3irc228s" path="res://totem.tscn" id="9_c057x"]
-
+[ext_resource type="PackedScene" path="res://goal_platform.tscn" id="7_qwd27"]
+[ext_resource type="PackedScene" path="res://totem.tscn" id="9_c057x"]
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_2mu01")
@@ -41,7 +39,6 @@ texture = ExtResource("4_07fe4")
 [node name="BoatAndHook" parent="." instance=ExtResource("5_0yt5l")]
 position = Vector2(-88, -260)
 
-
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 1.52588e-05)
 zoom = Vector2(1.2, 1.2)
@@ -50,14 +47,14 @@ zoom = Vector2(1.2, 1.2)
 position = Vector2(-429, 227)
 
 [node name="GoalPlatform" parent="." instance=ExtResource("7_qwd27")]
-
 position = Vector2(449, 222)
-
 
 [node name="LevelEnterSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_n6kcu")
 pitch_scale = 0.79
 
-
 [node name="Node2D2" parent="." instance=ExtResource("9_c057x")]
+position = Vector2(-434, 167)
+
+[node name="Node2D3" parent="." instance=ExtResource("9_c057x")]
 position = Vector2(-434, 167)
