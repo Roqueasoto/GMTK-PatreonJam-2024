@@ -24,7 +24,7 @@ func _handle_reel_input(delta: float) -> void:
 	#if Input.is_action_pressed("Reel out"):
 		#reel_velocity += reel_speed * reel_direction
 	if Input.is_action_pressed("Reel in"):
-		hook.apply_impulse(-reel_direction,Vector2(0,0))
+		hook.apply_impulse(-reel_direction*20.0,Vector2(0,0))
 
 	
 	
@@ -35,7 +35,7 @@ func _process(delta: float) -> void:
 	_handle_reel_input(delta)
 	
 	
-	hook.apply_central_force(-hook.linear_velocity/20)
+	hook.apply_central_force(-hook.linear_velocity/40)
 	#hook	.apply_torque(-500*hook.angular_velocity)
 	
 	
