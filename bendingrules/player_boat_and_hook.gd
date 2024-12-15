@@ -10,13 +10,18 @@ func _handle_reel_input() -> void:
 	var reel_direction = Vector2(cos(fishing_line_angle), sin(fishing_line_angle))
 	
 	if Input.is_action_pressed("Reel in"):
-		hook.apply_impulse(-reel_direction,Vector2(0,0))
+		hook.apply_impulse(-reel_direction*20.0,Vector2(0,0))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	_handle_reel_input()
 	
-	hook.apply_central_force(-hook.linear_velocity/20)
+
+	hook.apply_central_force(-hook.linear_velocity/10)
+	#hook	.apply_torque(-500*hook.angular_velocity)
+	
+	
+
 	fishing_line.points = [
 		boat.position,
 		Vector2(hook.position[0], hook.position[1]+27)
