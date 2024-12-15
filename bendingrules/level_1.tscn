@@ -1,12 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://cd3phtpjut15r"]
+[gd_scene load_steps=8 format=3 uid="uid://cd3phtpjut15r"]
 
+[ext_resource type="Script" path="res://level_1.gd" id="1_2mu01"]
 [ext_resource type="Texture2D" uid="uid://byh70anm2lb28" path="res://Assets/KallanCreated/backgrounds/Bubble ocean.png" id="1_gtihl"]
 [ext_resource type="PackedScene" uid="uid://dgiwf6xcclh5i" path="res://obstacles/basic_obstacle.tscn" id="2_v0lct"]
 [ext_resource type="PackedScene" uid="uid://55vx4wf408sd" path="res://boost.tscn" id="3_3e7ws"]
 [ext_resource type="Texture2D" uid="uid://do7vvcs8657hn" path="res://Assets/KallanCreated/backgrounds/sand.png" id="4_07fe4"]
 [ext_resource type="PackedScene" uid="uid://uttrlcxjyynm" path="res://player_boat_and_hook.tscn" id="5_0yt5l"]
+[ext_resource type="AudioStream" uid="uid://2li71ebyhxj1" path="res://Assets/SFX/BubbleLevelEnter.mp3" id="7_n6kcu"]
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_2mu01")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, 1.52588e-05)
@@ -45,3 +48,7 @@ position = Vector2(-88, -260)
 
 [node name="boost" parent="." instance=ExtResource("3_3e7ws")]
 position = Vector2(-99, 68)
+
+[node name="LevelEnterSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_n6kcu")
+pitch_scale = 0.79
