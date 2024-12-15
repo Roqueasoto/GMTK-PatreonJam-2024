@@ -6,13 +6,15 @@
 [ext_resource type="PackedScene" uid="uid://55vx4wf408sd" path="res://boost.tscn" id="3_3e7ws"]
 [ext_resource type="Texture2D" uid="uid://do7vvcs8657hn" path="res://Assets/KallanCreated/backgrounds/sand.png" id="4_07fe4"]
 [ext_resource type="PackedScene" uid="uid://uttrlcxjyynm" path="res://player_boat_and_hook.tscn" id="5_0yt5l"]
+
+[ext_resource type="PackedScene" uid="uid://dks7x7my1nmga" path="res://platforum.tscn" id="6_52gav"]
+[ext_resource type="PackedScene" uid="uid://b60qh7n8weevd" path="res://goal_platform.tscn" id="7_qwd27"]
+
 [ext_resource type="AudioStream" uid="uid://2li71ebyhxj1" path="res://Assets/SFX/BubbleLevelEnter.mp3" id="7_n6kcu"]
+
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_2mu01")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, 1.52588e-05)
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(13, 204)
@@ -21,16 +23,13 @@ scale = Vector2(0.433594, 0.433594)
 texture = ExtResource("1_gtihl")
 
 [node name="basic_obstacle2" parent="." instance=ExtResource("2_v0lct")]
-position = Vector2(351, 179)
+position = Vector2(238, 180)
 
 [node name="basic_obstacle3" parent="." instance=ExtResource("2_v0lct")]
-position = Vector2(200, -172)
+position = Vector2(88, -20)
 
 [node name="basic_obstacle4" parent="." instance=ExtResource("2_v0lct")]
 position = Vector2(-265, -135)
-
-[node name="boost2" parent="." instance=ExtResource("3_3e7ws")]
-position = Vector2(422, -38)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-1, -225)
@@ -47,8 +46,22 @@ texture = ExtResource("4_07fe4")
 position = Vector2(-88, -260)
 
 [node name="boost" parent="." instance=ExtResource("3_3e7ws")]
+
+position = Vector2(-426, 93)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 1.52588e-05)
+zoom = Vector2(1.2, 1.2)
+
+[node name="Node2D" parent="." instance=ExtResource("6_52gav")]
+position = Vector2(-431, 131)
+
+[node name="GoalPlatform" parent="." instance=ExtResource("7_qwd27")]
+position = Vector2(463, 246)
+
 position = Vector2(-99, 68)
 
 [node name="LevelEnterSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_n6kcu")
 pitch_scale = 0.79
+

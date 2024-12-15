@@ -14,6 +14,12 @@ config/name="BendingRules"
 run/main_scene="res://main_menu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 
+[display]
+
+window/size/viewport_width=1366
+window/size/viewport_height=758
+window/stretch/mode="viewport"
+
 [input]
 
 "Boat left"={
