@@ -35,7 +35,7 @@ func _process(delta: float) -> void:
 	_handle_reel_input(delta)
 	
 	
-	hook.apply_central_force(-hook.linear_velocity/10)
+	hook.apply_central_force(-hook.linear_velocity/20)
 	#hook	.apply_torque(-500*hook.angular_velocity)
 	
 	
@@ -50,3 +50,7 @@ func _process(delta: float) -> void:
 	#var reel_direction = Vector2(cos(fishing_line_angle)/sin(fishing_line_angle)*.015*9.8,.015*9.8 )
 	
 	#hook.apply_impulse(-reel_direction,Vector2(0,0))
+	
+func _input(event):
+	if Input.is_key_pressed(KEY_R):
+		get_tree().reload_current_scene()
