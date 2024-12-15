@@ -8,6 +8,6 @@ func _ready() -> void:
 	print("Debug monitoring enabled for Area2D")
 
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(_body: Node2D) -> void:
 	print("winner")
 	get_tree().change_scene_to_file("res://won.tscn")
