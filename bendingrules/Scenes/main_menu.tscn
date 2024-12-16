@@ -1,0 +1,104 @@
+[gd_scene load_steps=10 format=3 uid="uid://ut6wjq6r21pn"]
+
+[ext_resource type="Theme" uid="uid://dqot5yu5ftg7i" path="res://Etc/main_menu.tres" id="1_qdpmx"]
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="2_dw6fa"]
+[ext_resource type="Texture2D" uid="uid://dvf4w7roij5at" path="res://Assets/KallanCreated/backgrounds/Ocean2.png" id="3_iawf1"]
+[ext_resource type="Texture2D" uid="uid://bmow2l1u6ye1t" path="res://Assets/KallanCreated/Team.png" id="4_w0ywj"]
+[ext_resource type="FontFile" uid="uid://cug3ukh8osf1q" path="res://Assets/KallanCreated/fish etc/something-fishy.regular.ttf" id="5_g2ccd"]
+[ext_resource type="PackedScene" uid="uid://cic056ogoei58" path="res://Scenes/random_pitch_audio_player.tscn" id="6_pu6it"]
+[ext_resource type="AudioStream" uid="uid://c4e47yk1p7su" path="res://Assets/SFX/ButtonHoverBubble.mp3" id="7_fuwt8"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ey4ni"]
+font = ExtResource("5_g2ccd")
+font_size = 100
+
+[sub_resource type="LabelSettings" id="LabelSettings_uflk5"]
+font_size = 25
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_qdpmx")
+script = ExtResource("2_dw6fa")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -271.0
+offset_top = -277.0
+offset_right = 1777.0
+offset_bottom = 2455.0
+texture = ExtResource("3_iawf1")
+
+[node name="Team" type="Sprite2D" parent="."]
+position = Vector2(485, 406)
+scale = Vector2(0.168106, 0.168106)
+texture = ExtResource("4_w0ywj")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 994.0
+offset_bottom = 558.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "The opposite of fishing
+"
+label_settings = SubResource("LabelSettings_ey4ni")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Summon Dagon and Drown the World?"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "No thanks, I hate fishes"
+
+[node name="ButtonHoverSfx" parent="MarginContainer" instance=ExtResource("6_pu6it")]
+stream = ExtResource("7_fuwt8")
+UPPER_BOUND_PITCH_SHIFT = 1.2
+LOWER_BOUND_PITCH_SHIFT = 0.8
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(502, 219)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 391.0
+offset_top = 472.0
+offset_right = 593.0
+offset_bottom = 507.0
+text = "By Team Quintet"
+label_settings = SubResource("LabelSettings_uflk5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 498.0
+offset_right = 1241.0
+offset_bottom = 625.0
+
+[node name="Label" type="Label" parent="MarginContainer2"]
+layout_mode = 2
+text = "a/d to move boat, up arrow to pull on the fishing line, r to reset."
+
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
