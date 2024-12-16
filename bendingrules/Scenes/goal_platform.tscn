@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b60qh7n8weevd"]
+
+[ext_resource type="Script" path="res://Scripts/goal_platform.gd" id="1_c8fpp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wehca"]
+size = Vector2(220, 20)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_rf30m"]
+
+[node name="GoalPlatform" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_c8fpp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_wehca")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(224, 20)
+texture = SubResource("PlaceholderTexture2D_rf30m")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

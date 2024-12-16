@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://c0vmevi56mydw"]
+
+[ext_resource type="Script" path="res://Scripts/won.gd" id="1_0d0yn"]
+[ext_resource type="Texture2D" uid="uid://cfbsjp73mxt1s" path="res://Assets/KallanCreated/backgrounds/Ocean1.png" id="1_57j0m"]
+[ext_resource type="Theme" uid="uid://dqot5yu5ftg7i" path="res://Etc/main_menu.tres" id="1_fp3ku"]
+[ext_resource type="Texture2D" uid="uid://do7vvcs8657hn" path="res://Assets/KallanCreated/backgrounds/sand.png" id="2_7n0s2"]
+[ext_resource type="FontFile" uid="uid://cug3ukh8osf1q" path="res://Assets/KallanCreated/fish etc/something-fishy.regular.ttf" id="2_bwp5j"]
+[ext_resource type="PackedScene" uid="uid://cic056ogoei58" path="res://Scenes/random_pitch_audio_player.tscn" id="6_qk0vg"]
+[ext_resource type="AudioStream" uid="uid://c4e47yk1p7su" path="res://Assets/SFX/ButtonHoverBubble.mp3" id="7_gl4la"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8cynw"]
+font = ExtResource("2_bwp5j")
+font_size = 130
+shadow_size = 100
+shadow_color = Color(0, 0, 0, 0.490196)
+
+[sub_resource type="Theme" id="Theme_l7onc"]
+
+[sub_resource type="Theme" id="Theme_kunws"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_fp3ku")
+script = ExtResource("1_0d0yn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(585, 21)
+texture = ExtResource("1_57j0m")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = -245.0
+offset_top = 148.0
+offset_right = 1587.0
+offset_bottom = 901.0
+text = "Yes!! You Have 
+Drowned the World!!"
+label_settings = SubResource("LabelSettings_8cynw")
+horizontal_alignment = 1
+
+[node name="Sand" type="Sprite2D" parent="."]
+position = Vector2(773, -9)
+texture = ExtResource("2_7n0s2")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 496.0
+offset_right = 1185.0
+offset_bottom = 723.0
+theme = SubResource("Theme_l7onc")
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_kunws")
+text = "🔥 Celebrate ️🔥"
+
+[node name="ButtonHoverSfx" parent="VBoxContainer" instance=ExtResource("6_qk0vg")]
+stream = ExtResource("7_gl4la")
+UPPER_BOUND_PITCH_SHIFT = 1.2
+LOWER_BOUND_PITCH_SHIFT = 0.8
+
+[connection signal="mouse_entered" from="VBoxContainer/Exit" to="." method="_on_exit_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="." method="_on_exit_pressed"]
